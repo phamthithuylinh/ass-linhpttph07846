@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { SlideComponent } from './slide/slide.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 const routes: Routes = [
@@ -15,10 +16,11 @@ const routes: Routes = [
   {path: 'footer', component: FooterComponent},
   {path: 'header', component: HeaderComponent},
   {path: 'product-add', component: ProductAddComponent},
-  {path: 'product', component: ProductListComponent},
+  {path: 'product-list', component: ProductListComponent},
   {path: 'manager', component: ProductManagerComponent},
   {path: 'slide', component: SlideComponent},
   {path: 'product/delete/:productID', component: ProductListComponent},
+  {path: 'product/:id', component: ProductDetailComponent}
 ];
 
 @NgModule({
